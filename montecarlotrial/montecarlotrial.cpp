@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "Noise.h"
+#include "txGraphicsIO.h"
 
 class txImage;
 class txScene;
@@ -11,7 +12,7 @@ double g_state = 0;
 double g_i = 0;
 double g_j = 0;
 
-static char *g_sceneName = NULL;
+static char *g_sceneName = "..//media//boxscene.ray";
 static char *g_imageName = NULL;
 static const int g_ImageWidth = 512;
 static const int g_ImageHeight = g_ImageWidth/4*3;
@@ -38,6 +39,9 @@ txScene *g_Scene;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	NoiseInit();
+
+	txReadRayFile(g_sceneName);
+
 	return 0;
 }
 
