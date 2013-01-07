@@ -6,6 +6,7 @@ class txTexture
 {
 public:
 	txTexture(void);
+	explicit txTexture(const char* imageName);
 	~txTexture(void);
 
 private:

@@ -78,6 +78,7 @@
     <ClInclude Include="Noise.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="txBox.h" />
     <ClInclude Include="txBrdf.h" />
     <ClInclude Include="txDrawVertex.h" />
     <ClInclude Include="txGraphicsIO.h" />
@@ -85,7 +86,9 @@
     <ClInclude Include="txMaterial.h" />
     <ClInclude Include="txPoint.h" />
     <ClInclude Include="txScene.h" />
+    <ClInclude Include="txSphere.h" />
     <ClInclude Include="txTexture.h" />
+    <ClInclude Include="txTriangle.h" />
     <ClInclude Include="txType.h" />
     <ClInclude Include="txVector2D.h" />
     <ClInclude Include="txVector3D.h" />
@@ -97,6 +100,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="txBox.cpp" />
     <ClCompile Include="txBrdf.cpp" />
     <ClCompile Include="txDrawVertex.cpp" />
     <ClCompile Include="txGraphicsIO.cpp" />
@@ -104,7 +108,9 @@
     <ClCompile Include="txMaterial.cpp" />
     <ClCompile Include="txPoint.cpp" />
     <ClCompile Include="txScene.cpp" />
+    <ClCompile Include="txSphere.cpp" />
     <ClCompile Include="txTexture.cpp" />
+    <ClCompile Include="txTriangle.cpp" />
     <ClCompile Include="txType.cpp" />
     <ClCompile Include="txVector2D.cpp" />
     <ClCompile Include="txVector3D.cpp" />

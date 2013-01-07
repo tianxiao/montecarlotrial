@@ -10,6 +10,10 @@ public:
 	void SetY(double y){this->y = y;};
 	void SetZ(double z){this->z = z;};
 
+	const double GetX()const {return x;};
+	const double GetY()const {return y;};
+	const double GetZ()const {return z;};
+
 private:
 	double x;
 	double y;
