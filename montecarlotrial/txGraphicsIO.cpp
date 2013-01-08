@@ -15,7 +15,7 @@
 #include "txSphere.h"
 #include "txBox.h"
 
-txScene *txReadRayFile(const char *filename){
+txScene *txResourceManageer::txReadRayFile(const char *filename){
 	FILE *fp;
 	if (!(fp = fopen(filename, "r"))){
 		assert(false);
@@ -24,10 +24,6 @@ txScene *txReadRayFile(const char *filename){
 
 	txScene *rtnScene = new txScene();
 	assert(rtnScene);
-
-	std::vector<txDrawVertex*> vertices;
-	std::vector<txTexture*> textures;
-	std::vector<txMaterial *> materials;
 
 	bool cameraFound = false;
 
@@ -59,11 +55,14 @@ txScene *txReadRayFile(const char *filename){
 			}
 			//txDrawVertex *v0 = vertices[i0];
 			txTriangle *pTriangle = new txTriangle(i0, i1, i2);
+
 			// pick the right material for the new shape
 			// TODO!!!
+			pTriangle->SetMaterial(materials[m]);
 
 			// Creat a new node and Insert the node into scene
 			// TODO!!! scene graphic inserting.
+			rtnScene->AddTriangle(pTriangle);
 		}else if (!strcmp(cmd, "#shape_sphere")){
 			// Read data
 			int m; // m means the index of the material
@@ -76,6 +75,8 @@ txScene *txReadRayFile(const char *filename){
 			}
 			// Creat node
 			txSphere *pSphere = new txSphere(txVector3D(cx, cy, cz),r);
+			pSphere->SetMaterial(materials[m]);
+			rtnScene->AddShpere(pSphere);
 		}else if(!strcmp(cmd, "#shape_box")){
 			int m;
 			double cx, cy, cz, lx, ly, lz;
@@ -130,4 +131,23 @@ txScene *txReadRayFile(const char *filename){
 	fclose(fp);
 
 	return rtnScene;
+}
+
+txResourceManageer::~txResourceManageer(){
+	ReleaseResources();
+}
+
+void txResourceManageer::ReleaseResources(){
+	for (size_t i=0; i<vertices.size(); i++){
+		delete vertices[i];
+		vertices[i] = NULL;
+	}
+	for (size_t i=0; i<textures.size(); i++){
+		delete textures[i];
+		textures[i] = NULL;
+	}
+	for (size_t i=0; i<materials.size(); i++){
+		delete materials[i];
+		materials[i] = NULL;
+	}
 }

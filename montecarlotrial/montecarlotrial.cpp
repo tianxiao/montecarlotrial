@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Noise.h"
 #include "txGraphicsIO.h"
+#include "txScene.h"
 
 class txImage;
 class txScene;
@@ -40,7 +41,12 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	NoiseInit();
 
-	txReadRayFile(g_sceneName);
+	txResourceManageer resource;
+	txScene *scene = resource.txReadRayFile(g_sceneName);
+
+	if (!scene) exit(1);
+
+
 
 	return 0;
 }

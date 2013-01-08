@@ -20,6 +20,8 @@ txMaterial::txMaterial(const txTexture *texture){
 	this->texture = texture;
 }
 txMaterial::txMaterial(const txBrdf *brdf, const txTexture *texture){
+	this->brdf = brdf;
+	this->texture = texture;
 }
 
 
