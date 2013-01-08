@@ -1,0 +1,92 @@
+#camera	3	3.25	13	0	-0.07	-1	0	1	0	0.3333
+
+
+#material	0	0	0	0.9	0.9	0.9	0	0	0	0	0	0	0	0	0	-1	-1
+
+#material	0	0	0	0.5	0.5	0.5	0	0	0	0	0	0	0	0	0	-1	-1
+#material	0	0	0	0.7	0.4	0.4	0	0	0	0	0	0	0	0	0	-1	-1
+#material	0	0	0	0.4	0.4	0.7	0	0	0	0	0	0	0	0	0	-1	-1
+
+#material	0	0	0	0	0	0	0	0	0	200	200	200	0	0	0	-1	-1
+
+#material	0	0	0	0.0	0.0	0.0	1	1	1	0	0	0	200	0	0	-1	-1
+
+#material	0	0	0	0.9	0.9	0.9	0	0	0	0	0	0	0	0	0	-1	-1	
+
+
+#vertex	6	0	0	0	1	0	0	0
+#vertex	0	0	0	0	1	0	0	0
+#vertex	0	0	7	0	1	0	0	0
+#vertex	6	0	7	0	1	0	0	0
+
+#shape_triangle	1	0	1	2	
+#shape_triangle	1	0	2	3
+
+
+#vertex	6	5	0	0	-1	0	0	0
+#vertex	6	5	7	0	-1	0	0	0
+#vertex	0	5	7	0	-1	0	0	0
+#vertex	0	5	0	0	-1	0	0	0
+
+#vertex	2	5	0	0	-1	0	0	0
+#vertex	2	5	7	0	-1	0	0	0
+#vertex	4	5	0	0	-1	0	0	0
+#vertex	4	5	7	0	-1	0	0	0
+
+#vertex	0	5	2	0	-1	0	0	0
+#vertex	6	5	2	0	-1	0	0	0
+#vertex	0	5	4	0	-1	0	0	0
+#vertex	6	5	4	0	-1	0	0	0
+
+#vertex	4	5	2	0	-1	0	0	0
+#vertex	4	5	4	0	-1	0	0	0
+#vertex	2	5	4	0	-1	0	0	0
+#vertex	2	5	2	0	-1	0	0	0
+
+#shape_triangle	1	4	5	11	
+#shape_triangle	1	4	11	10
+#shape_triangle	1	6	7	9	
+#shape_triangle	1	7	8	9
+#shape_triangle	1	8	16	19	
+#shape_triangle	1	8	10	16
+#shape_triangle	1	9	18	17
+#shape_triangle	1	9	17	11
+
+#shape_triangle	4	16	17	18	
+#shape_triangle	4	16	18	19
+
+#vertex	6	0	7	0	0	-1	0	0
+#vertex	0	0	7	0	0	-1	0	0
+#vertex	0	5	7	0	0	-1	0	0
+#vertex	6	5	7	0	0	-1	0	0
+
+#shape_triangle	6	20	21	22	
+#shape_triangle	6	20	22	23
+
+#vertex	6	0	0	0	0	1	0	0
+#vertex	0	0	0	0	0	1	0	0
+#vertex	0	5	0	0	0	1	0	0
+#vertex	6	5	0	0	0	1	0	0
+
+#shape_triangle	1	24	26	25	
+#shape_triangle	1	24	27	26
+
+#vertex	6	0	7	-1	0	0	0	0
+#vertex	6	0	0	-1	0	0	0	0
+#vertex	6	5	7	-1	0	0	0	0
+#vertex	6	5	0	-1	0	0	0	0
+
+#shape_triangle	3	28	30	29	
+#shape_triangle	3	29	30	31
+
+
+#vertex	0	0	7	1	0	0	0	0
+#vertex	0	0	0	1	0	0	0	0
+#vertex	0	5	7	1	0	0	0	0
+#vertex	0	5	0	1	0	0	0	0
+
+#shape_triangle	2	32	33	34	
+#shape_triangle	2	33	35	34
+
+#shape_sphere	5	1.5	1.0	1.5	1.0
+#shape_sphere	5	4.5	1.0	4.5	1.0

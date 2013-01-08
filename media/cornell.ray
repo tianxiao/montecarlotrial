@@ -1,0 +1,90 @@
+#camera	2.78	2.73	-8.00	0	0	1	0	1	0	0.3333	
+
+
+
+
+
+
+#material	0	0	0	0	0	0	0.9	0.9	0.9	0	0	0	0	0	0	-1	-1
+
+#material	0	0	0	0.4	0.4	0.4	0	0	0	0	0	0	0	0	0	-1	-1
+#material	0	0	0	0.5	0	0	0	0	0	0	0	0	0	0	0	-1	-1
+#material	0	0	0	0	0.5	0	0	0	0	0	0	0	0	0	0	-1	-1
+#material	0	0	0	0	0	0	0	0	0	300	300	300	0	0	0	-1	-1
+#material	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	-1	-1
+#material	0	0	0	0	0	0.5	0	0	0	0	0	0	0	0	0	-1	-1	
+#vertex	5.5	0	0	0	1	0	0	0
+#vertex	0	0	0	0	1	0	0	0
+#vertex	0	0	5.5	0	1	0	0	0
+#vertex	5.5	0	5.5	0	1	0	0	0
+
+#shape_triangle	1	0	1	2	
+#shape_triangle	1	0	2	3
+
+
+#vertex	5.5	5.5	0	0	-1	0	0	0
+#vertex	5.5	5.5	5.5	0	-1	0	0	0
+#vertex	0	5.5	5.5	0	-1	0	0	0
+#vertex	0	5.5	0	0	-1	0	0	0
+
+#vertex	2.2	5.5	0	0	-1	0	0	0
+#vertex	2.2	5.5	5.5	0	-1	0	0	0
+#vertex	3.4	5.5	0	0	-1	0	0	0
+#vertex	3.4	5.5	5.5	0	-1	0	0	0
+
+#vertex	0	5.5	2.2	0	-1	0	0	0
+#vertex	5.5	5.5	2.2	0	-1	0	0	0
+#vertex	0	5.5	3.4	0	-1	0	0	0
+#vertex	5.5	5.5	3.4	0	-1	0	0	0
+
+#vertex	3.4	5.5	2.2	0	-1	0	0	0
+#vertex	3.4	5.5	3.4	0	-1	0	0	0
+#vertex	2.2	5.5	3.4	0	-1	0	0	0
+#vertex	2.2	5.5	2.2	0	-1	0	0	0
+
+#shape_triangle	1	4	5	11	
+#shape_triangle	1	4	11	10
+#shape_triangle	1	6	7	9	
+#shape_triangle	1	7	8	9
+#shape_triangle	1	8	16	19	
+#shape_triangle	1	8	10	16
+#shape_triangle	1	9	18	17
+#shape_triangle	1	9	17	11
+
+#shape_triangle	4	16	17	18	
+#shape_triangle	4	16	18	19
+
+#vertex	5.5	0	5.5	0	0	-1	0	0
+#vertex	0	0	5.5	0	0	-1	0	0
+#vertex	0	5.5	5.5	0	0	-1	0	0
+#vertex	5.5	5.5	5.5	0	0	-1	0	0
+
+#shape_triangle	6	20	21	22	
+#shape_triangle	6	20	22	23
+
+#vertex	5.5	0	0	0	0	1	0	0
+#vertex	0	0	0	0	0	1	0	0
+#vertex	0	5.5	0	0	0	1	0	0
+#vertex	5.5	5.5	0	0	0	1	0	0
+
+#shape_triangle	1	24	26	25	
+#shape_triangle	1	24	27	26
+
+#vertex	5.5	0	5.5	-1	0	0	0	0
+#vertex	5.5	0	0	-1	0	0	0	0
+#vertex	5.5	5.5	5.5	-1	0	0	0	0
+#vertex	5.5	5.5	0	-1	0	0	0	0
+
+#shape_triangle	2	28	30	29	
+#shape_triangle	2	29	30	31
+
+
+#vertex	0	0	5.5	1	0	0	0	0
+#vertex	0	0	0	1	0	0	0	0
+#vertex	0	5.5	5.5	1	0	0	0	0
+#vertex	0	5.5	0	1	0	0	0	0
+
+#shape_triangle	3	32	33	34	
+#shape_triangle	3	33	35	34
+
+#shape_sphere	5	1.5	2.5	2.5	1.0
