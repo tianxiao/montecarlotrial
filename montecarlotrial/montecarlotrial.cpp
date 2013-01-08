@@ -5,6 +5,9 @@
 #include "Noise.h"
 #include "txGraphicsIO.h"
 #include "txScene.h"
+#include "txImage.h"
+#include "Rgb.h"
+
 
 class txImage;
 class txScene;
@@ -46,7 +49,16 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	if (!scene) exit(1);
 
-
+	// trial save file
+	char * filenamebkp = "D:\\pictures\\trial.jpg";
+	txImage image(512,512);
+	txRgb equalcolor(0.5,0.5,0.5);
+	for (size_t i=0; i<512; i++){
+		image.SetPixelRGB(i,40,equalcolor);
+		image.SetPixelRGB(i,41,equalcolor);
+		image.SetPixelRGB(i,42,equalcolor);
+	}
+	image.WriteJPEG(filenamebkp);
 
 	return 0;
 }
